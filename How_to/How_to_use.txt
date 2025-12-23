@@ -1,0 +1,11 @@
+# Installation
+
+git clone https://github.com/mizitheji/Network-IDS-Lab.git
+cd network-ids
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Run the IDS
+sudo venv/bin/python main.py
