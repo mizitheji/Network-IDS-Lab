@@ -1,0 +1,20 @@
+
+---
+
+## ⚙️ Configuration (`config.yaml`)
+
+```yaml
+interface: ens18          # IDS VM interface (CHANGE DEPENDING ON THE SYSTEM'S INTERFACE)
+erspan: true              # Enable ERSPAN mode
+store_packets: false
+
+syn_flood:
+  threshold: 100
+  window: 10
+
+port_scan:
+  threshold: 20
+
+logging:
+  file: logs/alerts.log
+  level: INFO
