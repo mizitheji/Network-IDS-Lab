@@ -1,8 +1,6 @@
-# 🛡️ Network IDS Lab (ERSPAN + Proxmox + Python)
+# 🛡️ Network IDS Lab (RSPAN + Proxmox + Python)
 
-A lightweight **Network Intrusion Detection System (IDS)** built using **Python and Scapy**, designed to run as a **VM inside Proxmox** and receive mirrored traffic via **ERSPAN** from Cisco switches.
-
-This lab reflects **real enterprise IDS deployments**, where traffic is mirrored over IP instead of physical SPAN ports.
+A lightweight **Network Intrusion Detection System (IDS)** built using **Python and Scapy**, designed to run as a **VM inside Proxmox** and receive mirrored traffic via **RSPAN** from Cisco switches.
 
 ---
 
@@ -10,7 +8,7 @@ This lab reflects **real enterprise IDS deployments**, where traffic is mirrored
 
 - Detect common Layer 2–4 attacks
 - Analyze mirrored traffic passively
-- Demonstrate ERSPAN-based monitoring
+- Demonstrate RSPAN-based monitoring
 - Build a clean, modular Python IDS
 - Provide a GitHub-ready security lab
 
@@ -23,7 +21,7 @@ This lab reflects **real enterprise IDS deployments**, where traffic is mirrored
         |
 [ Access Switch ]
         |
-[ Core Switch ] === ERSPAN (GRE) === [ Proxmox Host ] - [ IDS VM (Ubuntu) ] - [ Attacker VM (Kali Linux) ]
+[ Core Switch ] === RSPAN === [ Proxmox Host ] - [ IDS VM (Ubuntu) ] - [ Attacker VM (Kali Linux) ]
         |
   [ Mikrotik ]
         |
@@ -31,7 +29,7 @@ This lab reflects **real enterprise IDS deployments**, where traffic is mirrored
 ```
 
 - IDS is **NOT inline**
-- Traffic is mirrored using **ERSPAN**
+- Traffic is mirrored using **RSPAN**
 - IDS receives GRE-encapsulated packets
 
 ---
@@ -72,4 +70,3 @@ network-ids/
 - IDS is passive only
 - No packet blocking
 - No IP assigned to sniffing interface
-- ERSPAN traffic decoded by Scapy
