@@ -73,6 +73,20 @@ network-ids/
   └── logger.py
 ```
 
+# 🧪 Attack Simulation
+
+1. SYN Flood
+```
+hping3 -S --flood -p 80 <target>
+```
+2. Port Scan
+```
+nmap -p 1-1000 <target>
+```
+3. ARP Spoof
+```
+arpspoof -t <victim> <gateway>
+```
 # 🔐 Security Notes
 
 - IDS is passive only
