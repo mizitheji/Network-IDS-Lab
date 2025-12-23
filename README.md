@@ -2,6 +2,15 @@
 
 A lightweight **Network Intrusion Detection System (IDS)** built using **Python and Scapy**, designed to run as a **VM inside Proxmox** and receive mirrored traffic via **RSPAN** from Cisco switches.
 
+Hardware and software use:
+1. Mikrotik (Router)
+2. Cisco C9300 (Core and Access switch)
+3. Juniper AP12 (Access point)
+4. Dell Workstation (Virtual machine server)
+5. Laptop (Victim)
+6. Proxmox VE (Virtual machine Hypervisor)
+7. Ubuntu server LTS 24.03 (IDS) (VM)
+8. Kali linux (Attacker) (VM)
 ---
 
 ## 🎯 Objectives
@@ -30,7 +39,6 @@ A lightweight **Network Intrusion Detection System (IDS)** built using **Python 
 
 - IDS is **NOT inline**
 - Traffic is mirrored using **RSPAN**
-- IDS receives GRE-encapsulated packets
 
 ---
 
