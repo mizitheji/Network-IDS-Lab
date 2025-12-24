@@ -28,9 +28,9 @@ Hardware and software use:
 ```text
 [ Users / Servers ]
         |
-[ Access Switch ]
-        |
-[ Core Switch ] === RSPAN === [ Proxmox Host ] - [ IDS VM (Ubuntu) ] - [ Attacker VM (Kali Linux) ]
+[ Access Switch ] === Managemnet === [ Proxmox Host ] - [ IDS VM (Ubuntu) ] - [ Attacker VM (Kali Linux) ]
+        |                                                       ||
+[ Core Switch ] ================== Monitoring ====================
         |
   [ Mikrotik ]
         |
