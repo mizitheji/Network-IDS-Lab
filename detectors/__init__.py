@@ -1,3 +1,3 @@
-from .syn_flood import detect as syn_flood
-from .port_scan import detect as port_scan
-from .arp_spoof import detect as arp_spoof
+from . import syn_flood
+from . import port_scan
+from . import arp_spoof
